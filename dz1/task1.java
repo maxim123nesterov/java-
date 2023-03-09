@@ -9,11 +9,19 @@ public class task1 {
         Integer num = iscan.nextInt();
         int figure = 1;
         int sum = 0;
+        int factorial = 1;
+        
         for (int i = 0; i < num; i++)
         {
-            sum = sum + figure++;
+            
+            sum = sum + figure;
+            factorial = factorial * figure;
+            figure++;
         }
-        System.out.println(sum);
+        
+        System.out.printf("Факториал числа = %s",factorial);
+        System.out.println();
+        System.out.printf("Сумма чисел = %s",sum);
     }
 }
 
