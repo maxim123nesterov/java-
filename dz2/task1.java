@@ -58,20 +58,8 @@ public class task1
             
             array[i] = input.nextInt();
         }
-    
-        // try
-        // {
-        //     FileWriter fr = new FileWriter(file, true);
-        //     fr.write(sb.toString());
-        //     fr.write("\n");
-        //     fr.close();
-        // }
-        // catch (IOException e) {
-        //     e.printStackTrace();
-        //     }
              for (int i = 0; i < size; i++)
              {
-                
                 bubbleSort(array);
                 sb.append(" " + array[i]);
                 writefile(sb, file); 
