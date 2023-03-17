@@ -11,6 +11,19 @@ import java.util.Scanner;
 
 public class task1 
 {
+    public static void writefile(StringBuilder sb, File file)
+    {
+        try
+        {
+            FileWriter fr = new FileWriter(file, true);
+            fr.write(sb.toString());
+            fr.write("\n");
+            fr.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+            }
+    }
     public static void bubbleSort(int[] array) 
     {
         StringBuilder sb = new StringBuilder();
@@ -31,7 +44,7 @@ public class task1
     }
 
     
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
         File file = new File("array.txt"); //Создание файла в который записывается массив
         StringBuilder sb = new StringBuilder(); 
@@ -45,23 +58,27 @@ public class task1
             
             array[i] = input.nextInt();
         }
-        for (int i = 0; i < size; i++) 
-        {
-            sb.append(" " + array[i]);
-        }
-            FileWriter fr = new FileWriter(file, true);
-            fr.write(sb.toString());
-            fr.write("\n");
-            fr.close();
-            for (int i = 0; i < size; i++)
-            {
+    
+        // try
+        // {
+        //     FileWriter fr = new FileWriter(file, true);
+        //     fr.write(sb.toString());
+        //     fr.write("\n");
+        //     fr.close();
+        // }
+        // catch (IOException e) {
+        //     e.printStackTrace();
+        //     }
+             for (int i = 0; i < size; i++)
+             {
                 
                 bubbleSort(array);
                 sb.append(" " + array[i]);
-                FileWriter fr2 = new FileWriter(file, true);
-                fr2.write(sb.toString());
-                fr2.write("\n");
-                fr2.close();
-            } 
+                writefile(sb, file); 
+             } 
+            
+             
     }
+    
 }
+
