@@ -2,7 +2,7 @@ package dz2;
 
 public class task3 {
     public static void main(String[] args) throws Exception {
-        String [] arrayData =  lib.ReadLineFromFile("dataForTask3.txt");
+        String [] arrayData =  lib.ReadLineFromFile("dataForTask2.txt");
         for(int i = 0; i < arrayData.length; i++) {
             System.out.println(PrintLine(arrayData[i]));
         }
