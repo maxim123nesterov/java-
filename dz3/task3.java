@@ -23,26 +23,7 @@ public class task3
         for (int i = 0; i < arr.size(); i++) 
         {
             sum = sum + arr.get(i);
-        }
-        
-        // int min = arr.get(0);
-        // int max = arr.get(0);
-        // for (int i = 0; i < arr.size();i ++) 
-        //     {
-                
-                
-        //             if(i < min)
-        //             {
-        //                 min = i;
-                        
-        //             }
-        //             if(i > max)
-        //             {
-        //                 max = i;
-                        
-        //             }
-        //     }
-            
+        }    
         System.out.println(arr);
         System.out.println("Минимальный элемент массива: " + Collections.min(arr));
         System.out.println("Максимальный элемент массива: " + Collections.max(arr));
