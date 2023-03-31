@@ -10,9 +10,7 @@ import java.util.Random;
 public class task2
 {
    
-    /**
-     * @param args
-     */
+  
     public static void main(String[] args) 
     {
         ArrayList<Integer> array = new ArrayList<Integer>();
