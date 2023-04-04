@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class task1
+public class task2
 {   
     public static void main(String[] args) 
     {
